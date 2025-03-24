@@ -56,32 +56,17 @@ END ALGORITHM
 
 
 **Flowchart for Quick Sort:**
-┌─────────────────────┐
-│ QuickSort(arr,low,high) │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│   low < high?       │
-└──────────┬──────────┘
-           ↓
-     ┌─────┴─────┐
-     │           │
-    Yes          No
-     │           │
-     ↓           ↓
-┌─────────────────────┐    ┌─────────────────────┐
-│pivotIndex←Partition()│    │       Return        │
-└──────────┬──────────┘    └─────────────────────┘
-           ↓
-┌─────────────────────┐
-│QuickSort(arr,low,   │
-│     pivotIndex-1)   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│QuickSort(arr,       │
-│pivotIndex+1,high)   │
-└─────────────────────┘
+flowchart TD
+    A[QuickSort] --> B{low < high?}
+    B -->|Yes| C[pivotIndex = Partition]
+    B -->|No| D[Return]
+    C --> E[QuickSort\nleft part]
+    E --> F[QuickSort\nright part]
+    
+    subgraph Partition
+    P1[Choose pivot] --> P2[Arrange elements]
+    P2 --> P3[Return pivot position]
+    end
 
 
 
@@ -150,37 +135,18 @@ END ALGORITHM
 
 
 **Flowchart for Merge Sort:**
-┌─────────────────────┐
-│ MergeSort(arr,left,right) │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    left < right?    │
-└──────────┬──────────┘
-           ↓
-     ┌─────┴─────┐
-     │           │
-    Yes          No
-     │           │
-     ↓           ↓
-┌─────────────────────┐    ┌─────────────────────┐
-│middle←(left+right)/2│    │       Return        │
-└──────────┬──────────┘    └─────────────────────┘
-           ↓
-┌─────────────────────┐
-│MergeSort(arr,left,  │
-│       middle)       │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│MergeSort(arr,       │
-│  middle+1,right)    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ Merge(arr,left,     │
-│   middle,right)     │
-└─────────────────────┘
+flowchart TD
+    A[MergeSort] --> B{left < right?}
+    B -->|Yes| C[Find middle point]
+    B -->|No| D[Return]
+    C --> E[MergeSort\nleft half]
+    E --> F[MergeSort\nright half]
+    F --> G[Merge the sorted halves]
+    
+    subgraph Merge
+    M1[Create temp arrays] --> M2[Copy data]
+    M2 --> M3[Merge back]
+    end
 
 
 
@@ -232,26 +198,18 @@ END ALGORITHM
 
 
 **Flowchart for Heap Sort:**
-┌─────────────────────┐
-│    HeapSort(arr)    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│     n ← len(arr)    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│Build max heap:      │
-│For i←n/2-1 down to 0│
-│  Heapify(arr,n,i)   │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│Extract elements:    │
-│For i←n-1 down to 0: │
-│  Swap arr[0],arr[i] │
-│  Heapify(arr,i,0)   │
-└─────────────────────┘
+flowchart TD
+    A[HeapSort] --> B[Build max heap]
+    B --> C[Extract elements one by one]
+    
+    subgraph BuildHeap
+    D[For i = n/2-1 down to 0] --> E[Heapify]
+    end
+    
+    subgraph Extract
+    F[For i = n-1 down to 0] --> G[Swap root with end]
+    G --> H[Heapify reduced heap]
+    end
 
 
 
@@ -277,39 +235,13 @@ END ALGORITHM
 
 
 **Flowchart for Insertion Sort:**
-┌─────────────────────┐
-│  InsertionSort(arr) │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│     n ← len(arr)    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ FOR i ← 1 TO n-1    │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│    key ← arr[i]     │
-│    j ← i - 1        │
-└──────────┬──────────┘
-           ↓
-┌─────────────────────┐
-│ WHILE j≥0 AND       │
-│   arr[j] > key      │
-└──────────┬──────────┘
-           ↓
-     ┌─────┴─────┐
-     │           │
-    Yes          No
-     │           │
-     ↓           ↓
-┌─────────────────────┐    ┌─────────────────────┐
-│arr[j+1] ← arr[j]    │    │  arr[j+1] ← key     │
-│j ← j - 1            │    └──────────┬──────────┘
-└──────────┬──────────┘               │
-           │                          │
-           └──────────────────────────┘
+flowchart TD
+    A[InsertionSort] --> B[For i = 1 to n-1]
+    B --> C[key = arr[i]]
+    C --> D{j >= 0 AND\narr[j] > key?}
+    D -->|Yes| E[Move element ahead]
+    D -->|No| F[Place key in position]
+    E --> D
 
 
 ## 3. Planned Datasets and Test Cases (15 points)
