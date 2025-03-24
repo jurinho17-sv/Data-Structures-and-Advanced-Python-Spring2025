@@ -38,11 +38,11 @@ Based on the results shown in your terminal output:
 
 ### Comparison Operations Analysis
 
-**1. Operation Counts**: Merge Sort consistently performs fewer comparisons than Quick Sort for larger datasets.
+1. **Operation Counts**: Merge Sort consistently performs fewer comparisons than Quick Sort for larger datasets.
 
-**2. Heap Sort Efficiency**: Heap Sort requires more comparisons than Quick Sort for random data but performs more consistently across all dataset types.
+2. **Heap Sort Efficiency**: Heap Sort requires more comparisons than Quick Sort for random data but performs more consistently across all dataset types.
 
-**3. Insertion Sort Cost**: Insertion Sort shows dramatically increasing comparison counts as dataset size increases, especially for random and reverse-sorted data.
+3. **Insertion Sort Cost**: Insertion Sort shows dramatically increasing comparison counts as dataset size increases, especially for random and reverse-sorted data.
 
 ## 4. Algorithm Performance by Dataset Type
 
@@ -96,21 +96,21 @@ Based on the results shown in your terminal output:
 
 During implementation and testing, we encountered several challenges:
 
-**1. Path Configuration Issues**: Initially, there were problems locating the dataset files due to path configuration issues in the performance test script. This was resolved by correcting the file paths to properly access the datasets directory.
+1. **Path Configuration Issues**: Initially, there were problems locating the dataset files due to path configuration issues in the performance test script. This was resolved by correcting the file paths to properly access the datasets directory.
 
-**2. Performance Measurement Accuracy**: Ensuring accurate timing measurements for very small datasets (where execution times were in microseconds) required taking multiple measurements and averaging results.
+2. **Performance Measurement Accuracy**: Ensuring accurate timing measurements for very small datasets (where execution times were in microseconds) required taking multiple measurements and averaging results.
 
-**3. Memory Usage Tracking**: Tracking peak memory usage proved challenging in Python. We addressed this by focusing on the theoretical space complexity and the number of swap operations as indicators of memory efficiency.
+3. **Memory Usage Tracking**: Tracking peak memory usage proved challenging in Python. We addressed this by focusing on the theoretical space complexity and the number of swap operations as indicators of memory efficiency.
 
-**4. Binary Search Optimization Trade-offs**: The binary search optimization for Insertion Sort reduced comparisons but didn't significantly improve overall performance due to the unchanged number of swaps required.
+4. **Binary Search Optimization Trade-offs**: The binary search optimization for Insertion Sort reduced comparisons but didn't significantly improve overall performance due to the unchanged number of swaps required.
 
 ## 7. Conclusion
 
 Our analysis reveals that no single sorting algorithm is superior in all situations. The choice of algorithm should depend on the specific requirements of the application:
 
-**- Quick Sort** excels with random data and large datasets where average-case performance is more important than worst-case guarantees.
-**- Merge Sort** provides the most consistent performance across all dataset types and sizes, making it ideal for applications where predictable performance is critical.
-**- Heap Sort** offers in-place sorting with guaranteed O(n log n) performance, making it suitable for memory-constrained environments.
-**- Insertion Sort** is the algorithm of choice for small datasets (n < 20) or nearly sorted data.
+- **Quick Sort** excels with random data and large datasets where average-case performance is more important than worst-case guarantees.
+- **Merge Sort** provides the most consistent performance across all dataset types and sizes, making it ideal for applications where predictable performance is critical.
+- **Heap Sort** offers in-place sorting with guaranteed O(n log n) performance, making it suitable for memory-constrained environments.
+- **Insertion Sort** is the algorithm of choice for small datasets (n < 20) or nearly sorted data.
 
 The performance characteristics observed in our testing closely align with the theoretical complexity analysis, confirming that algorithm selection should be based on data characteristics, memory constraints, and stability requirements.

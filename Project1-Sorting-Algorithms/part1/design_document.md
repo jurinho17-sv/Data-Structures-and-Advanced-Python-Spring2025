@@ -2,7 +2,7 @@
 **Advanced Python Programming and Data Structures**
 **Spring 2025**
 
-## 1. Algorithm Selection and Rationale (15 points)
+## 1. Algorithm Selection and Rationale
 
 Our team (Group 14) has selected the following sorting algorithms for implementation and analysis:
 
@@ -18,7 +18,7 @@ Our team (Group 14) has selected the following sorting algorithms for implementa
 ### Insertion Sort
 **Rationale:** Despite its O(n²) worst-case complexity, Insertion Sort excels with small datasets (n < 20) or nearly-sorted data, where it can approach O(n) performance. Its simplicity, low overhead, and adaptive nature make it ideal as a final step in more complex algorithms (like Quick Sort's partition handling). Insertion Sort is also stable, preserving the relative order of equal elements, which is crucial for certain applications.
 
-## 2. Detailed Pseudocode and Flowcharts (20 points)
+## 2. Detailed Pseudocode and Flowcharts
 
 ### Quick Sort
 
@@ -244,7 +244,7 @@ flowchart TD
     E --> D
 
 
-## 3. Planned Datasets and Test Cases (15 points)
+## 3. Planned Datasets and Test Cases
 
 To thoroughly evaluate the performance and correctness of our sorting algorithms, we have designed the following datasets and test cases:
 
