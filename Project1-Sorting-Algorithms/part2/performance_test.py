@@ -23,7 +23,9 @@ from part2.heapsort import heapsort
 from part2.insertionsort import insertionsort, insertionsort_with_binary_search
 
 # Create results directory if it doesn't exist
-os.makedirs('results', exist_ok=True)
+# (modified on Mar 24) os.makedirs('results', exist_ok=True)
+results_dir = os.path.join('Project1-Sorting-Algorithms', 'results')
+os.makedirs(results_dir, exist_ok=True)
 
 def load_dataset(filename):
     """Load a dataset from a JSON file."""
@@ -98,7 +100,8 @@ def run_performance_tests():
     df = pd.DataFrame(results)
     
     # Save results to CSV
-    df.to_csv('results/performance_results.csv', index=False)
+    # (modified on Mar 24) df.to_csv('results/performance_results.csv', index=False)
+    df.to_csv(os.path.join(results_dir, 'performance_results.csv'), index=False)
     
     # Print summary table
     summary = df.groupby(['algorithm', 'dataset']).agg({
@@ -137,7 +140,8 @@ def generate_charts(results_df):
         ax.set_ylabel('Time (ms)')
         ax.set_xlabel('Algorithm')
         plt.tight_layout()
-        plt.savefig(f'results/time_comparison_size_{size}.png')
+        # (modified on Mar 24) plt.savefig(f'results/time_comparison_size_{size}.png')
+        plt.savefig(os.path.join(results_dir, f'time_comparison_size_{size}.png'))
     
     # Create comparisons chart
     plt.figure(figsize=(12, 6))
@@ -157,7 +161,8 @@ def generate_charts(results_df):
         ax.set_ylabel('Comparisons')
         ax.set_xlabel('Algorithm')
         plt.tight_layout()
-        plt.savefig(f'results/comparisons_size_{size}.png')
+        # (modified on Mar 24) plt.savefig(f'results/comparisons_size_{size}.png')
+        plt.savefig(os.path.join(results_dir, f'comparisons_size_{size}.png'))
     
     # Algorithm comparison across sizes
     plt.figure(figsize=(12, 6))
@@ -175,11 +180,13 @@ def generate_charts(results_df):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig('results/size_vs_time.png')
+    # (modified on Mar 24) plt.savefig('results/size_vs_time.png')
+    plt.savefig(os.path.join(results_dir, 'size_vs_time.png'))
 
 if __name__ == "__main__":
     print("Starting performance tests...")
     results = run_performance_tests()
     print("\nGenerating charts...")
     generate_charts(results)
-    print("\nPerformance testing complete! Results saved to 'results' directory.")
+    # (modified on Mar 24) print("\nPerformance testing complete! Results saved to 'results' directory.")
+    print(f"\nPerformance testing complete! Results saved to '{results_dir}' directory.")
