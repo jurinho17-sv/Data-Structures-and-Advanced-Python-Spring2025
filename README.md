@@ -8,8 +8,4 @@ This repository contains projects, assignments, and lab work for my Data Structu
 ### Project 1: Sorting Algorithms
 Implementation and analysis of various sorting algorithms including Quick Sort, Merge Sort, Heap Sort, and Insertion Sort.
 
-## Weekly Labs
-(To be added as the course progresses)
-
-## Discussion Posts
 (To be added as the course progresses)
