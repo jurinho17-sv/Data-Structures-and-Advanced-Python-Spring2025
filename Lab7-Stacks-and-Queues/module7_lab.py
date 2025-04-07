@@ -4,7 +4,10 @@
 # Lab 7 Group 15
 # Name: Ju Ho Kim(10671687), Sangmin Kim(10664950)
 # Lab 7: Implementing Stacks and Queues
+# GitHub URL: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab7-Stacks-and-Queues
 # ========================================================
+
+
 
 # ----- PART A: Stack Implementation (Ticket Cancellation Management) -----
 
@@ -113,6 +116,8 @@ class Stack:
         """
         return self.size
         
+
+
 # ----- PART B: Queue Implementation (Customer Service Call Handling) -----
 
 class Queue:
@@ -235,6 +240,8 @@ class Queue:
             The number of elements in the queue
         """
         return self.size
+
+
 
 # ----- Example Usage -----
 
