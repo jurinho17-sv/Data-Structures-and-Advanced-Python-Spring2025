@@ -20,3 +20,13 @@ Implementation of Stack and Queue data structures for a ticketing service compan
 - Comprehensive error handling and edge case management
 - Dynamic array resizing for the Queue implementation
 - Detailed examples demonstrating LIFO and FIFO behavior
+
+### Lab 9: Implementing Trees
+Implementation of binary trees with various traversal methods and operations.
+
+#### Features:
+- Binary tree implementation with Node class
+- Recursive traversal methods: preorder, inorder, and postorder
+- Binary Search Tree (BST) with insert, search, and remove operations
+- AVL Tree implementation with self-balancing capabilities (Extra Credit)
+- Comprehensive testing of all tree operations
