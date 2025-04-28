@@ -1,8 +1,8 @@
 # Lab 9: Trees Implementation
 
-**Author:** Ju Ho Kim, Sangmin Kim
-**Course:** CS 034 - Data Structures and Advanced Python  
-**Date:** April 27, 2025
+- **Author:** Ju Ho Kim, Sangmin Kim
+- **Course:** CS 034 - Data Structures and Advanced Python  
+- **Date:** April 27, 2025
 
 ## Overview
 This lab implements binary trees, binary search trees (BST), and AVL trees with various operations and traversal methods.
@@ -17,6 +17,7 @@ This lab implements binary trees, binary search trees (BST), and AVL trees with 
 
 ### Part 1: Binary Tree Construction & Traversals
 - Created a binary tree with the structure:
+
     A
    / \
   B   C
@@ -42,7 +43,7 @@ D   E   F
 - Left-Right (LR) Rotation
 - Right-Left (RL) Rotation
 
-## Sample Outputs
+## Outputs
 
 ### Binary Tree Traversals
 ![Binary Tree Traversals](./screenshots/binary_tree_traversals.png)

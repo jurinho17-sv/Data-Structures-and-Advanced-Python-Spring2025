@@ -3,6 +3,8 @@ CS 034 - Data Structures and Advanced Python
 Lab 9: Trees
 Group 14: Ju Ho Kim, Sangmin Kim
 Date: April 27, 2025
+
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab9-Trees
 """
 
 class Node:
