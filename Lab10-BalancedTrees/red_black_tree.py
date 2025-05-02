@@ -6,7 +6,7 @@ Lab 10: Balanced Trees
 Group 14: Ju Ho Kim, Sangmin Kim
 Date: May, 1st, 2025
 
-GitHub repo:
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab10-BalancedTrees
 """
 
 class RBNode:

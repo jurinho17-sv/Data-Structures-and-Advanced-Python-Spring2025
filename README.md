@@ -35,7 +35,7 @@ Implementation of self-balancing binary search trees
   - AVL Tree with automatic balancing via rotations
   - Red-Black Tree with color-based balancing
 
-#### Features:**
+#### Features:
   - Binary tree implementation with Node class
   - AVL Tree with height-based balancing
   - Red-Black Tree with color property balancing
