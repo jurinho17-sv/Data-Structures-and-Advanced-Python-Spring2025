@@ -1,8 +1,7 @@
 # Data-Structures-and-Advanced-Python-Spring2025
 
-My name is Ju Ho Kim, one of the CS 034 students (Spring 2025). 
-I'll update my coursework here repo this semester.
-This repo is going to be about implementation of various data structures and algorithms using Python (Spring 2025 course projects)
+My name is Ju Ho Kim.
+I'll update my coursework here repo this semester (CS 034 - Spring 2025).
 
 ## Projects
 
@@ -30,3 +29,15 @@ Implementation of binary trees with various traversal methods and operations.
 - Binary Search Tree (BST) with insert, search, and remove operations
 - AVL Tree implementation with self-balancing capabilities (Extra Credit)
 - Comprehensive testing of all tree operations
+
+### Lab 10: Balanced Trees
+Implementation of self-balancing binary search trees
+  - AVL Tree with automatic balancing via rotations
+  - Red-Black Tree with color-based balancing
+
+#### Features:**
+  - Binary tree implementation with Node class
+  - AVL Tree with height-based balancing
+  - Red-Black Tree with color property balancing
+  - Tree visualization and traversal methods
+  - Performance comparison between tree types
