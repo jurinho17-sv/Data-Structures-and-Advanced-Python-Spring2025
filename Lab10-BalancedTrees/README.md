@@ -11,11 +11,19 @@ This lab explores the implementation and comparison of two self-balancing binary
 - `tree_comparison.py`: Script to compare the performance of both tree implementations
 - `screenshots/`: Directory containing output screenshots
 
-## Screenshots
+## Outputs
 
-- [AVL Tree Implementation](/screenshots/avl_tree_output.png): Shows the insertion process and final structure of the AVL Tree with test values
-- [Red-Black Tree Implementation](/screenshots/rb_tree_output.png): Shows the insertion process and final structure of the Red-Black Tree with test values
-- [Performance Comparison](/screenshots/comparison_results.png): Shows the comparison between both tree implementations with 20 random integers
+### AVL Tree Implementation
+![AVL Tree Implementation](./screenshots/avl_tree_output.png)
+- Shows the insertion process and final structure of the AVL Tree with test values
+
+### Red-Black Tree Implementation
+![Red-Black Tree Implementation](./screenshots/rb_tree_output.png)
+- Shows the insertion process and final structure of the Red-Black Tree with test values
+
+### Performance Comparison
+![Performance Comparison](./screenshots/comparison_results.png)
+- Shows the comparison between both tree implementations with 20 random integers
 
 ## AVL Tree Implementation
 
