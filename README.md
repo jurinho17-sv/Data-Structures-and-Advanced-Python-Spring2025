@@ -41,3 +41,13 @@ Implementation of self-balancing binary search trees
   - Red-Black Tree with color property balancing
   - Tree visualization and traversal methods
   - Performance comparison between tree types
+
+### Lab 11: Heaps and Treaps
+Implementation of Binary Min-Heap and Treap data structures with testing and documentation.
+
+#### Features:
+- Binary Min-Heap implementation using Python's heapq module
+- Treap implementation combining BST properties with heap priorities
+- Automatic balancing through randomized priorities and rotations
+- Comprehensive test suite demonstrating heap and treap operations
+- Detailed design document with pseudocode and data representations
