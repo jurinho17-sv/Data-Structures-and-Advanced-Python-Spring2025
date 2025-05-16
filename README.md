@@ -51,3 +51,14 @@ Implementation of Binary Min-Heap and Treap data structures with testing and doc
 - Automatic balancing through randomized priorities and rotations
 - Comprehensive test suite demonstrating heap and treap operations
 - Detailed design document with pseudocode and data representations
+
+### Lab 12: Implementing and Applying the Set ADT
+Implementation of a custom Set abstract data type and its application to a Course Enrollment Manager.
+
+#### Features:
+- Custom `Set` class implementation using Python dictionaries
+- Set operations: add, remove, contains, union, intersection, difference
+- `EnrollmentManager` application for tracking student course enrollments
+- CSV file parsing for course roster management
+- Comprehensive unit testing with 15 test cases
+- Analysis of student enrollment patterns across courses
