@@ -6,7 +6,7 @@ Lab 12: Implementing and Applying the Set ADT
 Group 14: Ju Ho Kim, Sangmin Kim
 Date: May, 15th, 2025
 
-GitHub repo:
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab12-Set-ADT
 """
 
 import unittest
