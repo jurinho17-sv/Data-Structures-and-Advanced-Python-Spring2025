@@ -8,7 +8,7 @@ Project 3 - Smart Delivery Route Planner
 Group 14: Ju Ho Kim, Sangmin Kim
 Date: May, 23th, 2025
 
-GitHub repo:
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Project3-Smart-Delivery-Route-Planner
 """
 
 from graph_utils import build_graph, is_route_possible, find_shortest_path, plan_delivery
