@@ -1,12 +1,22 @@
 # Data-Structures-and-Advanced-Python-Spring2025
 
 My name is Ju Ho Kim.
-I'll update my coursework here repo this semester (CS 034 - Spring 2025).
+I'll update my coursework in this repo this semester (CS 034 - Spring 2025).
 
 ## Projects
 
 ### Project 1: Sorting Algorithms
 Implementation and analysis of various sorting algorithms including Quick Sort, Merge Sort, Heap Sort, and Insertion Sort.
+
+### Project 3: Smart Delivery Route Planner
+Implementation of a logistics route optimization system using graph algorithms for efficient delivery planning.
+
+#### Features:
+- Graph construction from CSV road network data
+- Route connectivity checking using Depth-First Search (DFS)
+- Shortest path calculation using Dijkstra's algorithm
+- Optimal delivery route planning with greedy nearest-neighbor heuristic
+- Interactive command-line interface for route planning
 
 ## Labs
 
