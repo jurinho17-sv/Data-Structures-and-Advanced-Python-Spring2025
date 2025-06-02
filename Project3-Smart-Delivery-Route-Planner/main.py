@@ -6,7 +6,7 @@ Smart Delivery Route Planner - Main Program
 CS 034 - Data Structures and Advanced Python
 Project 3 - Smart Delivery Route Planner
 Group 14: Ju Ho Kim, Sangmin Kim
-Date: May, 23th, 2025
+Date: Jun, 1st, 2025
 
 GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Project3-Smart-Delivery-Route-Planner
 """
