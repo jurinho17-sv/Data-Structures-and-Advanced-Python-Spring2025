@@ -90,3 +90,22 @@ Level 2: [11] [22] [33] [44] [55] [66] [90]
 **Group 14 (Ju Ho Kim, Sangmin Kim)**  
 CS 034 - Data Structures and Advanced Python  
 Spring 2025
+
+### Individual Contributions
+
+**Ju Ho Kim:**
+- Implemented the Node class structure and `is_full()` method
+- Developed the `insert()` and `_insert_non_full()` methods
+- Created the test driver program with random integer generation
+- Wrote documentation and README file
+
+**Sangmin Kim:**
+- Implemented the `_split_child()` method for node splitting logic
+- Developed the `contains()` and `_search()` methods
+- Implemented the `inOrderTraversal()` and `_in_order_helper()` methods
+- Created the bonus `print_tree()` visualization method
+
+### Collaborative Work
+- Design discussions and algorithm planning
+- Testing and debugging of all methods
+- Code review
