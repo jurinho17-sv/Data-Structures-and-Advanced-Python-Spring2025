@@ -1,7 +1,7 @@
 # Data-Structures-and-Advanced-Python-Spring2025
 
 My name is Ju Ho Kim.
-I'll update my coursework in this repo this semester (CS 034 - Spring 2025).
+I'll update my coursework in this repo (CS 034 - Spring 2025).
 
 ## Projects
 
@@ -72,3 +72,14 @@ Implementation of a custom Set abstract data type and its application to a Cours
 - CSV file parsing for course roster management
 - Comprehensive unit testing with 15 test cases
 - Analysis of student enrollment patterns across courses
+
+### Lab 15: B-Trees (The last one for this semester. Ty!!)
+Implementation of a 2-3-4 Tree (B-Tree) data structure from scratch with core functionalities and balancing logic.
+
+#### Features:
+- 2-3-4 Tree implementation with dynamic node splitting
+- Support for up to 3 keys per node and 2-4 children
+- Core operations: insert, contains, and in-order traversal
+- Automatic tree balancing through node splitting
+- Bonus: remove operation and visual tree printing
+- Comprehensive test driver with 15-20 random integers
