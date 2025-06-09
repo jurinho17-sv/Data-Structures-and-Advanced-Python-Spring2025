@@ -6,7 +6,7 @@ Lab 15 - B-Trees
 Author: Ju Ho Kim, Sangmin Kim
 Date: June. 8th. 2025
 
-GitHub repo:
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab15-BTrees
 
 Implementation of a 2-3-4 Tree (B-Tree) with dynamic node splitting
 """

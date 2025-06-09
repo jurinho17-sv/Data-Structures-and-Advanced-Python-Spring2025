@@ -6,7 +6,7 @@ Lab 15 - B-Trees Test Driver
 Author: Ju Ho Kim, Sangmin Kim
 Date: June. 8th. 2025
 
-GitHub repo:
+GitHub repo: https://github.com/jurinho17-sv/Data-Structures-and-Advanced-Python-Spring2025/tree/main/Lab15-BTrees
 
 Test program to demonstrate B-Tree operations with random integers
 """
